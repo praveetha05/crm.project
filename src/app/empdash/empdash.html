@@ -1,0 +1,24 @@
+<h1 class="text-white text-center">Employee Dashboard</h1>
+<div class="container d-flex gap-3 justify-content-center align-items-center mt-5">
+<button class="btn btn-success" (click)="prf()">Profile</button>
+<button class="btn btn-success" (click)="lead()">Add Leads</button>
+<button class="btn btn-success"><a href="cusdetails">customer</a></button>
+<button class="btn btn-success" (click)="sigin()">Logout</button>
+</div>
+
+
+
+
+<div *ngFor=" let x of oneDt" class="container h-75  text-white p-4 rounded mt-5 card">
+  <p><strong class="text-warning">Name:</strong> {{x.name}}</p>
+  <p><strong class="text-warning">Age:</strong> {{x.age}}</p>
+  <p><strong class="text-warning">Gender:</strong> {{x.gender}}</p>
+  <p><strong class="text-warning">Email:</strong> {{x.email}}</p>
+  <p><strong class="text-warning">Phone:</strong> {{x.phone}}</p>
+  <p><strong class="text-warning">City:</strong> {{x.city}}</p>
+</div>
+
+
+
+
+

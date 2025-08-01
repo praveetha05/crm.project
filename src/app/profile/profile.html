@@ -1,0 +1,32 @@
+<h1 class="text-white text-center">Profile</h1>
+
+<div *ngFor=" let x of oneDt" class="container h-75 w-25 bg-secondary text-white p-4 rounded">
+  <p><strong>Name:</strong> {{x.name}}</p>
+  <p><strong>Age:</strong> {{x.age}}</p>
+  <p><strong>Gender:</strong> {{x.gender}}</p>
+  <p><strong>Email:</strong> {{x.email}}</p>
+  <p><strong>Phone:</strong> {{x.phone}}</p>
+  <p><strong>City:</strong> {{x.city}}</p>
+</div>
+
+
+ <!-- <table class="table container w-75 mt-5 table-bordered border border-info border-5 bg-dark">
+      <tr  class="fw-bold text-info">
+        <th>ID</th>
+    <th>Name</th>
+  <th>Age</th>
+  <th>Gender</th>
+  <th>Email</th>
+  <th>Phoneno</th>
+  <th>City</th>
+  </tr>
+    <tr *ngFor="let x of oneDt"  class="fw-bold text-white">
+        <td>{{x.id}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.gender}}</td>
+         <td>{{x.email}}</td>
+          <td>{{x.phone}}</td>
+          <td>{{x.city}}</td>
+    </tr>
+</table> -->

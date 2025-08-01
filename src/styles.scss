@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+body{
+    background-image: url(/crm5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: gray;
+    background-blend-mode: multiply;
+    
+}
+

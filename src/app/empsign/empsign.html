@@ -1,0 +1,37 @@
+<div class="container w-25 bg-secondary p-5 text-white">
+
+    <h1 class="text-center">Employee Login</h1>
+<form action="">
+    <label for="">Email:</label>
+    <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Enter the email" required>
+    <label for="">Password:</label>
+    <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Enter the password">
+    <button class="btn btn-success mt-3" (click)="getData()">login</button>
+    <p style="color: red;">{{errorMessage}}</p>
+    <p style="color: green;">{{successMessage}}</p>
+</form>
+</div>
+
+<!-- <h1 class="text-white text-center">Profile</h1>
+
+
+ <table class="table container w-75 mt-5 table-bordered border border-info border-5 bg-dark">
+      <tr  class="fw-bold text-info">
+        <th>ID</th>
+    <th>Name</th>
+  <th>Age</th>
+  <th>Gender</th>
+  <th>Email</th>
+  <th>Phoneno</th>
+  <th>City</th>
+  </tr>
+    <tr *ngFor="let x of oneDt"  class="fw-bold text-white">
+        <td>{{x.id}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.age}}</td>
+        <td>{{x.gender}}</td>
+         <td>{{x.email}}</td>
+          <td>{{x.phone}}</td>
+          <td>{{x.city}}</td>
+    </tr>
+</table> -->

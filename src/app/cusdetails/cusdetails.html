@@ -1,0 +1,35 @@
+
+
+<h1 class="text-center fw-bold">Employee Dashboard</h1>
+
+<table class="table container w-75 mt-5 table-bordered border border-warning border-5 bg-dark">
+  <tr  class="fw-bold text-warning">
+    <th>Name</th>
+  <th>Age</th>
+  <th>Gender</th>
+  <th>Phoneno</th>
+  <th>City</th>
+  <th>Email</th>
+  <th>Status</th>
+  <th>Action</th>
+
+  </tr>
+  <tr *ngFor="let x of box ; let i=index" class="fw-bold text-white">
+    <td>{{x.name|uppercase}}</td>
+    <td>{{x.age}}</td>
+    <td>{{x.gender}}</td>
+    <td>{{x.phone}}</td>
+    <td>{{x.city}}</td>
+    <td>{{x.email}}</td>
+    <td>{{x.status}}</td>
+    
+    <td> <button class="btn btn-success w-30 bg-success" (click)="close(i)" [disabled]="x.status === 'Closed'" >Closed</button> <button class="btn btn-success w-30 bg-warning" (click)="open(i)" [disabled]="x.status === 'Open'" >Open</button><button class="btn btn-danger w-30 bg-danger" title="Reject" (click)="delete(x.id)">Reject</button>
+   </td>
+    
+  </tr>
+  
+</table>
+<section style="display: flex; justify-content: center; align-items: center; ">
+  <button class="btn btn-success" (click)="sign()">SignOut</button>
+</section>
+

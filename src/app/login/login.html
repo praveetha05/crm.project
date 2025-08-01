@@ -1,0 +1,13 @@
+<div class="container w-25 bg-secondary p-5 text-white">
+
+    <h1 class="text-center">Admin Login</h1>
+<form action="" (ngSubmit)="loginUser()">
+    <label for="">Email:</label>
+    <input type="email" class="form-control" [(ngModel)]="email" name="email" placeholder="Enter the email" required>
+    <label for="">Password:</label>
+    <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Enter the password">
+    <button class="btn btn-success mt-3" type="Submit">login</button>
+    <p style="color: red;">{{errorMessage}}</p>
+    <p style="color: green;">{{successMessage}}</p>
+</form>
+</div>

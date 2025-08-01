@@ -1,0 +1,46 @@
+{
+  "EmployerDetails": [
+    {
+      "id": "a513",
+      "name": "saranya",
+      "age": "28",
+      "gender": "Female",
+      "email": "saranya@gmail.com",
+      "phone": 9655113655,
+      "city": "coimbatore",
+      "password": "saranya"
+    },
+    {
+      "id": "f91b",
+      "name": "Nalini",
+      "age": "25",
+      "gender": "Female",
+      "email": "nalini@gmail.com",
+      "phone": 9674593465,
+      "city": "karaikudi",
+      "password": "nalini"
+    }
+  ],
+  "CustomerDetails": [
+    {
+      "id": "eb87",
+      "name": "Nalini",
+      "age": "25",
+      "gender": "Female",
+      "email": "nalini23@gmail.com",
+      "phone": 9674593465,
+      "city": "karaikudi",
+      "status": "Open"
+    },
+    {
+      "id": "a745",
+      "name": "Ramya",
+      "age": "25",
+      "gender": "Female",
+      "email": "ramya@gmail.com",
+      "phone": 9845623982,
+      "city": "karaikudi",
+      "status": "Closed"
+    }
+  ]
+}

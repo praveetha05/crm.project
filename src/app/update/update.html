@@ -1,0 +1,17 @@
+
+<div class="container w-50 bg-dark p-5 text-white ">
+
+    <h1 class="text-center text-warning">Employee Details</h1>
+<form action="">
+  <label for="">Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="Data.name" name="name">
+  <label for="">Age:</label>
+  <input type="age" class="form-control" [(ngModel)]="Data.age" name="age">
+    <label for="">Phoneno:</label>
+  <input type="number" class="form-control" [(ngModel)]="Data.phone" name="phone">
+      <label for="">City:</label>
+  <input type="text" class="form-control" [(ngModel)]="Data.city" name="city">
+    <button class="btn btn-success mt-5" type="Submit" (click)="up()">Edit Record</button>
+
+</form>
+</div>

@@ -1,0 +1,30 @@
+
+<div class="container w-50 bg-secondary p-5 text-white ">
+
+    <h1 class="text-center">Employee Details</h1>
+<form action="" (ngSubmit)="create()" >
+  <label for="">Name:</label>
+  <input type="text" class="form-control" [(ngModel)]="Data.name" name="name" placeholder="Enter the name">
+  <label for="">Age:</label>
+  <input type="age" class="form-control" [(ngModel)]="Data.age" name="age" placeholder="Enter the age">
+  <label for="">Gender:</label><br>
+  <input type="radio" name="gender" value="male" [(ngModel)]="Data.gender"> male
+<input type="radio" name="gender" value="Female" [(ngModel)]="Data.gender"> Female<br>
+
+
+
+    <label for="">Phoneno:</label>
+  <input type="number" class="form-control" [(ngModel)]="Data.phone" name="phone" placeholder="Enter the number">
+      <label for="">City:</label>
+  <input type="text" class="form-control" [(ngModel)]="Data.city" name="city" placeholder="Enter the city">
+    <label for="">Email:</label>
+    <input type="email" class="form-control" [(ngModel)]="Data.email" name="email" placeholder="Enter the email">
+    <label for="">password:</label>
+    <input type="password" class="form-control" [(ngModel)]="Data.password" name="password" placeholder="Enter the password">
+    <button class="btn btn-success mt-5" type="Submit">Create</button>
+    
+      <p style="color: red;">{{errorMessage}}</p>
+    <p style="color: green;">{{successMessage}}</p>
+</form>
+</div>
+
