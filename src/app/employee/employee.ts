@@ -1,9 +1,9 @@
 
-import { FormsModule } from '@angular/Forms';
 import { Component, OnInit } from '@angular/core';
 import { Schecker } from '../schecker';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 interface emp{
@@ -23,7 +23,7 @@ interface emp{
 @Component({
   selector: 'app-employee',
   providers:[Schecker],
-  imports: [FormsModule,HttpClientModule,CommonModule],
+  imports: [FormsModule ,HttpClientModule,CommonModule],
   templateUrl: './employee.html',
   styleUrl: './employee.scss'
 })

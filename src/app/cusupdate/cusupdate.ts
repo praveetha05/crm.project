@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Schecker } from '../schecker';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-cusupdate',
    providers:[Schecker],
-  imports: [CommonModule,HttpClientModule,FormsModule],
+  imports: [FormsModule,CommonModule,HttpClientModule],
   templateUrl: './cusupdate.html',
   styleUrl: './cusupdate.scss'
 })

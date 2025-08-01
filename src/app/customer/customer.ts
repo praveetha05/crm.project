@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Schecker } from '../schecker';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -19,7 +19,7 @@ interface emp{
 @Component({
   selector: 'app-customer',
   providers:[Schecker],
-  imports: [CommonModule,FormsModule,HttpClientModule],
+  imports: [FormsModule,CommonModule,HttpClientModule],
   templateUrl: './customer.html',
   styleUrl: './customer.scss'
 })

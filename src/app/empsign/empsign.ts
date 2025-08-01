@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Schecker } from '../schecker';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-empsign',
   providers:[Schecker],
- imports: [CommonModule,FormsModule,HttpClientModule],
+ imports: [FormsModule,CommonModule,HttpClientModule],
   templateUrl: './empsign.html',
   styleUrl: './empsign.scss'
 })

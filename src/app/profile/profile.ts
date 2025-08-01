@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Schecker } from '../schecker';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
 import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-profile',
    providers:[Schecker],
- imports: [CommonModule,FormsModule,HttpClientModule],
+ imports: [CommonModule,HttpClientModule],
 
   templateUrl: './profile.html',
   styleUrl: './profile.scss'

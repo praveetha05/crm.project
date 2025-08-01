@@ -3,13 +3,12 @@ import { Schecker } from '../schecker';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
 
 @Component({
   selector: 'app-details',
   providers:[Schecker],
 
-  imports: [FormsModule,HttpClientModule,CommonModule],
+  imports: [HttpClientModule,CommonModule],
   templateUrl: './details.html',
   styleUrl: './details.scss'
 })

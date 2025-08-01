@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
+import { FormsModule } from '@angular/forms';
 import { Schecker } from '../schecker';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-login',
   providers:[Schecker],
-  imports: [CommonModule,FormsModule,HttpClientModule],
+  imports: [ FormsModule,CommonModule,HttpClientModule],
   templateUrl: './login.html',
   styleUrl: './login.scss'
 })

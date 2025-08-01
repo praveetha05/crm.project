@@ -3,7 +3,7 @@ import { Schecker } from '../schecker';
 import { Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
+
 
 
 
@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/Forms';
 @Component({
   selector: 'app-cusdetails',
    providers:[Schecker],
-  imports: [FormsModule,HttpClientModule,CommonModule],
+  imports: [HttpClientModule,CommonModule],
   templateUrl: './cusdetails.html',
   styleUrl: './cusdetails.scss'
 })

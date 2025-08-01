@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Schecker } from '../schecker';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/Forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
@@ -10,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-empdash',
   providers:[Schecker],
-  imports: [FormsModule,HttpClientModule,CommonModule],
+  imports: [HttpClientModule,CommonModule],
   templateUrl: './empdash.html',
   styleUrl: './empdash.scss'
 })
